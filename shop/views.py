@@ -64,16 +64,17 @@ def product_detail(request, product_id):
         status=404,
     )
 def statistics(request):
-    total_products = len(PRODUCTS)
-    total_stock = sum(p["stock"] for p in PRODUCTS)
-
     prices = [p["price"] for p in PRODUCTS]
 
+    categories = {}
+    for product in PRODUCTS:
+        category = product["category"]
+        categories[category] = categories.get(category, 0) + 1
+
     return json_response({
-        "total_products": total_products,
-        "total_stock": total_stock,
+        "total_products": len(PRODUCTS),
+        "categories": categories,
         "average_price": round(sum(prices) / len(prices), 2),
-        "categories": sorted({
-            p["category"] for p in PRODUCTS
-        }),
+        "min_price": min(prices),
+        "max_price": max(prices),
     })
