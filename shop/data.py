@@ -1,0 +1,58 @@
+PRODUCTS = [
+    {
+        "id": 1,
+        "name": "Klawiatura mechaniczna K80",
+        "price": 349.00,
+        "category": "peripherals",
+        "stock": 12,
+    },
+    {
+        "id": 2,
+        "name": "Mysz bezprzewodowa Swift",
+        "price": 129.99,
+        "category": "peripherals",
+        "stock": 40,
+    },
+    {
+        "id": 3,
+        "name": "Monitor 27 cali QHD",
+        "price": 1199.00,
+        "category": "monitors",
+        "stock": 5,
+    },
+    {
+        "id": 4,
+        "name": "Słuchawki nauszne Cliff",
+        "price": 289.00,
+        "category": "audio",
+        "stock": 0,
+    },
+    {
+        "id": 5,
+        "name": "Podkładka pod mysz XL",
+        "price": 59.00,
+        "category": "peripherals",
+        "stock": 87,
+    },
+    {
+        "id": 6,
+        "name": "Kamera internetowa Pro",
+        "price": 399.00,
+        "category": "audio",
+        "stock": 8,
+    },
+    {
+        "id": 7,
+        "name": "Mikrofon USB Studio",
+        "price": 449.00,
+        "category": "audio",
+        "stock": 15,
+    },
+    {
+        "id": 8,
+        "name": "Monitor 24 cale HD",
+        "price": 799.00,
+        "category": "monitors",
+        "stock": 0,
+    },
+]
