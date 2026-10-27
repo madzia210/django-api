@@ -3,6 +3,8 @@ import { PRODUCTS } from "./data";
 import ProductCard from "./components/ProductCard";
 import ProductDetails from "./components/ProductDetails";
 
+console.log(import.meta.env.VITE_API_URL);
+
 function App() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
