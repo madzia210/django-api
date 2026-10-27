@@ -212,3 +212,25 @@ Dodano `VITE\_TAJNE=abc123` do `frontend/.env` i odczytano zmienną w `App.jsx`.
 
 Zmienne z prefiksem `VITE\_` nie nadają się do przechowywania sekretów, ponieważ ich wartości są widoczne w zbudowanej aplikacji.
 
+
+
+\## Zadanie 10 – test czystego klonu
+
+
+
+Sklonowano repozytorium z gałęzi `naprawione` do nowego katalogu `django-api-test`.
+
+
+
+Podczas testu wykryto brak pakietu `python-dotenv` w pliku `backend/requirements.txt`. Dodano pakiet do zależności, wykonano commit i wysłano poprawkę na GitHuba. Po aktualizacji klonu instalacja zależności i polecenie `python manage.py check` zakończyły się poprawnie.
+
+
+
+Migracje bazy danych wykonano poprawnie. Zależności frontendu zainstalowano przez `npm install`, a `npm run build` zakończyło się powodzeniem.
+
+
+
+Test pokazał, że czysty klon wymaga kompletnego pliku `requirements.txt`. Instrukcja w README pozwala odtworzyć konfigurację projektu.
+
+
+
